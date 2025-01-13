@@ -52,6 +52,7 @@ main {
 }
 
 .display-2 {
+  margin-top: 70px;
   font-size: 50px;
   text-transform: uppercase;
 }
@@ -112,7 +113,7 @@ form .form-control {
 
 /* Navbar */
 #navbar {
-  background: #1F1F24;
+  background: #19191f;
   color: #fff;
   overflow: auto;
 }
@@ -237,7 +238,7 @@ form .form-control {
 /* Contact */
 #contact {
   height: 70vh;
-  padding-top: 50px;
+  
 }
 
 #contact h2 {
@@ -264,6 +265,8 @@ text-align: center;
 #mainfooter2 {
   color: #fff;
 }
+
+/* Galeria */
 .galeria {
   display: block;
   width: 500px;
