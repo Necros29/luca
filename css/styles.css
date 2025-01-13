@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
+/* Version Mobil */
+
+    
+main {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Main */
+
+
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #1F1F24;
+    color: #e4e4e4;
+    position: relative;
+}
+
+h1,
+h2,
+h4 {
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7em;
+}
+
+a { text-decoration: none; }
+
+
+
+header img {
+  width: 120px;
+}
+
+/* Utilidad */
+.contenedor {
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+    
+}
+
+.contenedor2 {
+  text-align: center;
+  margin: 30px;
+}
+.large { font-size: 1.25rem; }
+
+.small { font-size: 0.8rem; }
+
+.display-1 { 
+  font-size: 52px; 
+  font-weight: 300px;
+}
+
+.display-2 { 
+  font-size: 40px; 
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* Navbar */
+
+
+#navbar {
+  
+  
+}
+
+#navbar ul {
+  
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: #38B6FF;
+}
+
+/* Vitrina */
+#vitrina {
+  background: url("../images/vitrina.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  text-align: right;
+  
+}
+
+#vitrina  h1 {
+  padding-top: 240px;
+  padding-left: 700px;
+}
+
+#vitrina p {
+  padding-left: 700px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* Servicios */
+.contenedorServicios {
+  margin-top: 3rem;
+  margin: 3rem;
+}
+#servicios {
+  padding: 90px 0;
+}
+
+#servicios h2 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.servicios-box {
+  float: left;
+  width: 33%;
+  padding: 40px;
+}
+
+.servicios-box h4 {
+  padding-top: 20px;
+}
+
+
+/* Acerca de */
+#acerca-de {
+  padding: 90px 0;
+  background: #343434;
+}
+
+#acerca-de h2 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#acerca-de p {
+  padding-bottom: 20px;
+}
+
+#acerca-de .large {
+  font-weight: 600;
+}
+
+.acerca-de-izquierda {
+  float: left;
+  width: 50%;
+  padding-right: 90px;
+}
+
+.acerca-de-derecha {
+  float: right;
+  width: 50%;
+  padding-left: 90px;
+}
+
+/* Conocenos */
+#vitrina2 {
+  background: url("../images/nosotros.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  text-align: right;
+  padding-top: 440px;
+}
+
+#conocenos  h2 {
+  margin-top: 55px;
+  padding-top: 35px;
+  margin-left: 20px;
+  padding-left: 15px;
+}
+
+#conocenos p {
+  text-align: center;
+}
+
+/* Contacto */
+.contact {
+  padding: 90px 0;
+}
+
+.contact h2 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+form {
+  padding-top: 1rem;
+  width: 50%;
+  margin-left: 95px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Footer */
+#mainfooter {
+  text-align: center;
+  padding:10px;
+}
+
+
+
+.galeria {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+}
