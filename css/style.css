@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
+
+
+
+
+
+
 /* Reset */
 * {
   margin: 0;
@@ -11,30 +18,35 @@
 html,
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #010105;
 }
 
 h1 { font-size: 2.5rem; }
 h2 { 
   font-size: 2rem; 
   font-weight: 300;
+  font-weight: bold;
+}
+
+h4 {
+  text-align: center;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.rem;
   margin: 10px 0;
   line-height: 1.7em;
+  text-align: center;
 }
 
 a { text-decoration: none; }
 
-main {
-  
-}
-
 /* Utility Classes */
-
+.letra-negra {
+  color: #010105;
+}
 .titulo {
-  color: aliceblue;
+  color: #F2F3F6;
 }
 
 .container {
@@ -44,17 +56,23 @@ main {
   padding: 0 20px;
 }
 
-.large { font-size: 1.25rem; }
+.large { 
+  font-size: 1.25rem;
+  justify-content: end;
+  margin-top: 70px;
+ }
 
 .display-1 { 
-  font-size: 70px; 
+  margin-top: 40px;
+  font-size: 50px; 
   text-transform: uppercase;
 }
 
 .display-2 {
-  margin-top: 70px;
+  margin-top: 10px;
   font-size: 50px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .btn {
@@ -65,67 +83,39 @@ main {
   font-weight: bold;
   letter-spacing: 1px;
   border-radius: 30px;
+  margin-bottom: 70px;
 }
 
 .btn-light {
   background: #45BCE9;
   border: 1px solid #45BCE9;
-  color: #fff;
+  color: #F2F3F6;
 }
 
 .btn-light:hover {
-  background: #fff;
+  background: #F2F3F6;
   border: 1px solid #45BCE9;
   color: #45BCE9;
 }
-
-form label {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-}
-
-form .form-group {
-  margin-bottom: 1rem;
-}
-
-form .form-control {
-  display: block;
-  width: 100%;
-  padding: 0.375rem 0.7rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #000;
-  background-color: #F2F3F6;
-  background-clip: padding-box;
-  border: 1px solid #F2F3F6;
-  border-radius: 0.25rem;
-}
-
 
 #mainheader {
   height: 100vh;
 }
 
-#bodyheader {
-  height: 25vh;
-  
-}
 
 /* Navbar */
 #navbar {
   background: #19191f;
-  color: #fff;
+  color: #F2F3F6;
   overflow: auto;
 }
 
 #navbar a {
-  color: #fff;
+  color: #F2F3F6;
 }
 
 #navbar .logo {
   float: left;
-  
-  
 }
 
 #navbar .logo span {
@@ -144,7 +134,7 @@ form .form-control {
 
 #navbar ul li a {
   display: block;
-  padding: 40px 30px;
+  padding: 32px 22px;
   text-align: center;
 }
 
@@ -162,7 +152,7 @@ form .form-control {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  padding-top: 50px;
+  padding-top: 15px;
 }
 
 #showcase h1 {
@@ -185,8 +175,8 @@ form .form-control {
 
 /* About */
 #about {
-  color: #091726;
-  height: 70vh;
+  color: #F2F3F6;
+  height: 90%;
   padding-top: 60px;
 }
 
@@ -205,19 +195,24 @@ form .form-control {
 }
 
 .about-left .large {
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .about-right {
   float: right;
   width: 50%;
   padding-left: 40px;
+  margin-top: 60px;
+  
 }
 
 /* Services */
 #services {
-  height: 70vh;
+  height: 100%;
   padding-top: 50px;
+  background-color: #F2F3F6;
+  width: 100%;
+  
 }
 
 #services h2 {
@@ -235,10 +230,17 @@ form .form-control {
   padding-bottom: 20px;
 }
 
+.lista-serv {
+  margin-top: 30px;
+  list-style: none;
+  text-align: center;
+}
+
 /* Contact */
 #contact {
-  height: 70vh;
-  
+  padding-top: 30px;
+  height: 70vh; 
+  color: #F2F3F6;
 }
 
 #contact h2 {
@@ -255,22 +257,47 @@ form .form-control {
   border-radius: 5px;
 }
 
+form label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+form .form-group {
+  margin-bottom: 1rem;
+  padding-top: 20px;
+}
+
+form .form-control {
+  display: block;
+  width: 100%;
+  padding: 0.175rem 0.7rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #010105;
+  background-color: #F2F3F6;
+  background-clip: padding-box;
+  border: 1px solid #F2F3F6;
+  border-radius: 0.25rem;
+}
 /* Footer */
 
 footer {
-margin-top: 250px;
+margin-top: 20%;
 text-align: center;
+color: #F2F3F6;
 }
 
 #mainfooter2 {
-  color: #fff;
+  display: grid;
+  color: #F2F3F6;
 }
 
 /* Galeria */
 .galeria {
   display: block;
-  width: 500px;
   margin: 0 auto;
+  height: 100vh;
+  padding-top: 15px;
 }
 
 .contenedor2 {
@@ -282,3 +309,153 @@ text-align: center;
   background-color: black;
 }
 
+
+
+
+/* TABLET */
+@media screen and (min-width:768px) and (max-width: 1024px) {
+
+ .services-box p {
+  font-size: small;
+ }
+
+ #about p {
+  font-size: small;
+ }
+
+ .derecha {
+  margin-top: 15px;
+ }
+
+
+ .galeria {
+  width: 85vh;
+ }
+
+}
+
+
+
+
+
+
+
+
+/* MOBILE */
+@media screen and (max-width:768px) {
+
+  /* Uilidad */
+  .display-1 { 
+    font-size: 40px; 
+  }
+  
+  /* Header */
+  #mainheader {
+    height: 100%;
+    padding-top: 0px;
+    padding-bottom: 100px;
+  }
+  
+  #bodyheader {
+    height: 100%;
+    
+  }
+  
+  /* Navbar */
+  #navbar {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  
+  #navbar .logo {
+    float: none;
+    padding-bottom: 20px;
+  }
+  
+  #navbar ul {
+    float: none;
+  }
+  
+  #navbar ul li a {
+    padding: 10px;
+  
+  }
+  
+  /* Showcase */
+  #showcase {
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  #showcase h1 {
+    padding-left: 0px;
+    padding-top: 40px;
+  }
+  
+  #showcase p {
+    padding-left: 0px;
+  }
+  
+  /* About */
+  #about {
+    height: 100%;
+  }
+  
+  .about-left,
+  .about-right {
+    float: none;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  
+  /* Services */
+  #services {
+    height: 100%;
+  }
+  
+  #services h2 {
+    padding-bottom: 30px;
+  }
+  
+  .services-box {
+    float: none;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Contact */
+  #contact {
+    height: 100%;
+    padding-top: 50px;
+  }
+  
+  #contact h2 {
+    padding-bottom: 40px;
+  }
+  
+  #contact form {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  
+  /* Footer */
+  #mainfooter {
+    padding: 20px;
+    height: 100%;
+  }
+  
+  /* Galeria */
+  main {
+   
+    
+  }
+
+  .galeria {
+    min-width: 360px;
+    background-size: contain;
+    width: 50vh;
+    margin: 0 auto;
+    padding-top: -100px;
+  }
+    }
