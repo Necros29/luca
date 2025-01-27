@@ -1,0 +1,80 @@
+@mixin container {
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+  }
+
+  @mixin large {
+    font-size: 1.25rem;
+    justify-content: end;
+    margin-top: 70px;
+  }
+
+  @mixin text-mayus {
+    font-size: 50px; 
+    text-transform: uppercase;
+  }
+
+  @mixin btn {
+   display: inline-block;
+   font-size: 15px;
+   padding: 15px 50px;
+   cursor: pointer;
+   font-weight: bold;
+   letter-spacing: 1px;
+   border-radius: 30px;
+   margin-bottom: 70px;
+  }
+
+  @mixin showcase {
+  text-align: right;
+  padding-top: 200px;
+  background: url('../images/vitrina.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 15px;
+  }
+
+@mixin form-control {
+    display: block;
+    width: 100%;
+    padding: 0.175rem 0.7rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #010105;
+    background-color: $color-secundario;
+    background-clip: padding-box;
+    border: 1px solid $color-secundario;
+    border-radius: 0.25rem;
+  }
+
+@mixin galeria {
+    display: block;
+    margin: 0 auto;
+    height: 100vh;
+    padding-top: 15px;
+}
+
+@mixin mainheader {
+    height: 100%;
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
+
+@mixin float {
+    float: none;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+@mixin galeria-mobile {
+    min-width: 360px;
+    background-size: contain;
+    width: 50vh;
+    margin: 0 auto;
+    padding-top: -100px;
+}

@@ -1,0 +1,384 @@
+@import "../scss/_variables.scss";
+@import "../scss/_mixin.scss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    body {
+        background-color: $color-primario;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+/* Estilo de Main */
+h1 { font-size: 2.5rem;}
+
+h2 {
+  font-size: 2rem; 
+  font-weight: 300;
+  font-weight: bold;
+}
+
+h4 { text-align: center;}
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.7em;
+  text-align: center;
+  }
+
+a { text-decoration: none; }
+
+  /* Clases de utilidad */
+.letra-negra {
+   color: $color-primario;
+  }
+
+.titulo {
+   color: $color-secundario;
+  }
+
+.container {
+   @include container;
+}
+
+.large {
+    @include large;
+}
+
+.display-1 {
+    margin-top: 40px;
+    @include text-mayus;
+}
+
+.display-2 {
+    margin-top: 10px;
+    text-align: center;
+    @include text-mayus;
+}
+
+.btn {
+    @include btn;
+}
+
+.btn-light {
+    background: $color-btn;
+    border: 1px solid $color-btn;
+    color: $color-secundario;
+}
+
+.btn-light:hover {
+    background: $color-secundario;
+    border: 1px solid $color-btn;
+    color: $color-btn;
+}
+
+#mainheader {height: 100vh;}
+
+/* Nav */
+ #navbar {
+    background: $color-primario;
+    color: $color-secundario;
+    overflow: auto;
+}
+
+#navbar a {
+    color: $color-secundario;
+  }
+
+#navbar {
+    .logo {
+        float: left;
+  }
+}
+
+#navbar {
+    .logo {
+        span {
+    color: $color-btn;
+    }
+  }
+}
+
+#navbar {
+    ul {
+      list-style: none;
+      float: right;
+      text-transform: uppercase;
+      li {
+        float: left;
+        a {
+            display: block;
+            padding: 32px 22px;
+            text-align: center;
+            :hover {
+                .current {
+                    background: $color-btn;
+                }
+            }
+        }
+      }   
+    }
+}
+
+/* Showcase */ 
+#showcase {
+    @include showcase;
+}
+
+
+#showcase {
+    h1 {
+     padding-left: 300px;
+     span {
+        font-weight: 300;
+     }
+    }
+  }
+
+  
+  #showcase {
+    p {
+     padding-left: 300px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+    }
+  }
+  
+  #showcase {
+    .btn {
+     text-transform: uppercase;
+    }
+  }
+  
+  /* About */
+#about {
+    color: $color-secundario;
+    height: 90%;
+    padding-top: 60px;
+    h2 {
+        padding-bottom: 20px;
+        p{
+            padding-bottom: 20px;
+        }
+    }
+  }
+
+  .about-left {
+    float: left;
+    width: 50%;
+    padding-right: 40px;
+    .large {
+        font-weight: 300;
+    }
+}
+
+.about-right {
+    float: right;
+    width: 50%;
+    padding-left: 40px;
+    margin-top: 60px;  
+  }
+
+/* Services */
+#services {
+    height: 100%;
+    padding-top: 50px;
+    background-color: $color-secundario;
+    width: 100%; 
+    h2 {
+        padding-bottom: 50px;
+    }
+  }
+
+.services-box {
+    float: left;
+    width: 33%;
+    padding: 20px;
+    img {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+  }
+
+.lista-serv{
+   margin-top: 30px;
+   list-style: none;
+   text-align: center;
+  }
+
+  /* Contact */
+#contact {
+    padding-top: 30px;
+    height: 70vh; 
+    color: $color-secundario;
+    h2 {
+        padding-bottom: 20px;
+    }
+    form {
+        width: 40%;
+        margin: 0 auto;
+    }
+    .btn{
+        width: 100%;
+  border-radius: 5px;
+    }
+  }
+
+form {
+    label {
+       display: inline-block;
+       margin-bottom: 0.5rem;
+    }
+    .form-group {
+       margin-bottom: 1rem;
+       padding-top: 20px;
+      }
+    .form-control {
+        @include form-control
+      }
+  }
+
+/* Footer */
+footer {
+    margin-top: 20%;
+    text-align: center;
+    color: $color-secundario;
+}
+
+#mainfooter2 {
+    display: grid;
+    color: $color-secundario;
+}
+
+/* Galeria */
+.galeria {
+    @include galeria
+}
+  
+.contenedor2 {
+    text-align: center;
+    margin: 30px;
+}
+  
+#fondo-galeria {
+    background-color: $color-primario;
+  }
+  
+
+/* TABLET */
+@media screen and (min-width:768px) and (max-width: 1024px) {
+
+.services-box p { font-size: small;}
+   
+#about p { font-size: small;}
+   
+.derecha { margin-top: 15px;}
+   
+.galeria { width: 85vh;}
+}
+
+
+
+/* MOBILE */
+@media screen and (max-width:768px) {
+
+/* Uilidad */
+.display-1 { font-size: 40px;}
+    
+/* Header */
+#mainheader {
+      @include mainheader;
+}
+    
+#bodyheader { height: 100%;}
+    
+/* Navbar */
+#navbar {
+      text-align: center;
+      padding-bottom: 25px;
+}
+    
+#navbar {
+    .logo {
+      float: none;
+      padding-bottom: 20px;
+    }
+    ul {
+        float: none;
+        li {
+            a {
+                padding: 10px;
+            }
+        }
+    }
+}
+    
+/* Showcase */
+#showcase {
+      text-align: center;
+      padding-top: 50px;
+}
+    
+#showcase {
+    h1 {
+      padding-left: 0px;
+      padding-top: 40px;
+    }
+    p {
+      padding-left: 0px;
+    }
+}
+       
+/* About */
+#about { height: 100%;}
+    
+.about-left { @include float;}
+    .about-right { @include float;}
+    
+/* Services */
+#services { height: 100%;
+    h2 {
+        padding-bottom: 30px;
+    }
+}
+    
+.services-box {
+      float: none;
+      width: 100%;
+      padding: 20px;
+}
+    
+/* Contact */
+#contact {
+      height: 100%;
+      padding-top: 50px;
+      h2 {
+        padding-bottom: 40px;
+      }
+      form {
+        width: 100%;
+        padding-bottom: 50px;
+      }
+}
+
+/* Footer */
+#mainfooter {
+      padding: 20px;
+      height: 100%;
+}
+    
+/* Galeria */
+.galeria {
+      @include galeria-mobile
+    }
+}
+
